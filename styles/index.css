@@ -97,36 +97,44 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 375px) {
+@media (max-width: 385px) {
     #menu {
         display: block;
     }
+
     nav {
         display: flex;
         flex-direction: column;
     }
+
     nav a {
         text-align: start;
         margin: 5px;
     }
+
     #nav {
         display: none;
     }
+
     #nav.open {
         display: flex;
     }
+
     .data {
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
+
     .article {
         color: white;
         padding: 5px 0;
     }
+
     section h2 {
         text-align: center;
     }
+
     #photos{
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.4);
@@ -134,6 +142,7 @@ footer {
         grid-template-columns: auto;
         justify-content: center;
     }
+
     #photos img {
         padding: 10px;
         width: 330px;

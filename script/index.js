@@ -1,8 +1,8 @@
 
 const menuButton = document.querySelector('#menu');
-const menuBar = document.querySelector('#nav');
+const nav = document.querySelector('#nav');
 
 menuButton.addEventListener('click', () => {
-    menuBar.classList.toggle('open');
+    nav.classList.toggle('open');
     menuButton.classList.toggle('open');
 })
