@@ -97,7 +97,7 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 412px) {
+@media (min-width: 375px) {
     #menu {
         display: block;
     }
