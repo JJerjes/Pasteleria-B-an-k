@@ -92,7 +92,7 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 390px) {
+@media (max-width: 370px) {
     
     #menu {
         display: block;
@@ -144,4 +144,12 @@ footer {
         width: 330px;
         height: 266px;
     }
+
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(225, 225, 225, 0.4);
+    }
+    
 }
