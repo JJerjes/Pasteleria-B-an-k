@@ -5,12 +5,11 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
     display: grid;
     min-height: 100dvh;
-    grid-template-rows: auto auto auto auto;    
+    grid-template-rows: auto auto 1fr auto;
+    font-family: 'Montserrat', sans-serif;
 }
-
 header {
     background-color: antiquewhite;
     text-align: center;
@@ -49,10 +48,6 @@ nav a:hover {
     height: 20px;
     left: 15px;
     z-index: 100;
-}
-
-#menu:focus {
-    outline: none;
 }
 
 #menu::before {
@@ -97,7 +92,8 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 385px) {
+@media (max-width: 390px) {
+    
     #menu {
         display: block;
     }
