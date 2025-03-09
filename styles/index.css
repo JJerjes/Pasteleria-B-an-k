@@ -26,7 +26,7 @@ nav {
 nav a {
     text-decoration: none;
     padding: 15px;
-    width: 100%;
+    width: 97%;
     text-align: center;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.1);
@@ -96,8 +96,7 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 370px) {
-    
+@media (max-width: 390px) {
     #menu {
         display: block;
     }
@@ -118,7 +117,7 @@ footer {
 
     #nav.open {
         display: flex;
-    }
+    }   
 
     .data {
         display: flex;
@@ -144,7 +143,7 @@ footer {
 
     #photos img {
         padding: 10px;
-        width: 290px;
+        width: 340px;
         height: 266px;
     }
 
