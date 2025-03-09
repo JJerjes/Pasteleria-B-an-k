@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto auto auto auto;    
+}
+
+header {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+nav a:hover {
+    background-color: yellowgreen;
+}
+
+#menu {
+    display: none;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    z-index: 100;
+}
+
+#menu:focus {
+    outline: none;
+}
+
+#menu::before {
+    content: '=';
+}
+
+#menu.open::before {
+    content: '✖️';
+    font-size: 1rem;
+}
+
+#photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(142, 40, 40, 0.6);
+    color: white;
+    font-weight: bold;
+}
+
+section h2 {
+    text-align: left;
+    padding: 20px;
+}
+
+#photos{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(225, 225, 225, 0.4);
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 375px) {
+    #menu {
+        display: block;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        text-align: start;
+        margin: 5px;
+    }
+    #nav {
+        display: none;
+    }
+    #nav.open {
+        display: flex;
+    }
+    .data {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .article {
+        color: white;
+        padding: 5px 0;
+    }
+    section h2 {
+        text-align: center;
+    }
+    #photos{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    #photos img {
+        padding: 10px;
+        width: 330px;
+        height: 266px;
+    }
+}
